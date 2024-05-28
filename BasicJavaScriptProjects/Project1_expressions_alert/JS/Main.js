@@ -8,11 +8,11 @@
 
    document.write("\To be or not to be,"+"Tubi or not Tubi?\"" +"ValterFernandes");
    var Family = "The Fernandes", Dad="Valter", Mom="Thalia",Son="Marcelo",Daughter="Celia";
-   document.write=(Dad);
+   document.write(Dad);
 //this is an expression below//
    document.write(4+4);
 //my fuction displayed in the LMS//
    function My_First_Function() {
     var str="This is the button text!";
-    document.getElementById("Button_text").innerHTML=str;
+    document.getElementById("Button_Text").innerHTML=str;
    }
