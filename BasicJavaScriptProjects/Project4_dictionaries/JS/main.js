@@ -10,3 +10,4 @@ function my_Dictionary() {
     document.getElementById("Dictionary").innerHTML=Animal.Sound;
 }
 //this code should delete the dictionary sound and come back undefined//
+
