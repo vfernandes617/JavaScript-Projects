@@ -21,8 +21,7 @@ function division() {
 }
 // function to to demonstrate the more math operation//
 function more_Math() {
-    var simple_Math=(1=2)*10/2-5;
-    document.getElementById("Math").innerHTML="1 plus 2, mulitplied by 10 divided in half and then subtractred by 5 equals" +simple_Math;
+ document.getElementById("Math").innerHTML="1 plus 2, mulitplied by 10 divided in half and then subtractred by 5 equals" +simple_Math;
 }
 // function to to demonstrate the Modulus operator//
 function modulus_Operator() {
