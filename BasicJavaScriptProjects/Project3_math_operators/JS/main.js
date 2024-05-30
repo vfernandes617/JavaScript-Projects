@@ -30,6 +30,7 @@ function division() {
 }
 // function to to demonstrate the more math operation//
 function more_Math() {
+ var simple_Math=1+2;
  document.getElementById("MathMore").innerHTML="1 plus 2, mulitplied by 10 divided in half and then subtractred by 5 equals"+simple_Math;
  function handleClick5 () {
     alert('Button 5 clicked');}
@@ -52,17 +53,15 @@ function negation_Operator () {
 // assigning x and y with variables//
 
 function handleClick8 () {
-    alert('Button 8 clicked');
 var x=5;
 x++;
-document.write(x);
+document.getElementById("handleClick8").innerHTML=x;
 }
 
 function handleClick9() {
-    alert('Button 9 clicked');
 var y=5
 y--;
-document.write(y);
+document.getElementById("handleClick9").innerHTML=y;
 }
 //to show a random number from 0-1 in the alert//
 window.alert(Math.random());
