@@ -1,0 +1,41 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voting Age Check</title>
+</head>
+<body>
+    <h1>Voting Age Check</h1>
+    <p>Enter your age:</p>
+    <input type="number" id="ageInput">
+    <button onclick="checkVote()">Check Eligibility</button>
+    <p id="result"></p>
+    <script>
+        //define the person constructor function//
+        function goto(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        //Add a method to the person prototype//
+        Person.prototype.great=function() {
+            return "Hello, my name is"+this.name+"and I am"+this.age+"years old.";
+        };
+        //create new instances of person//
+        var goto1=new goto("Alice",25);
+        var goto2=new goto("Sally",30);
+
+        //display the greetings//
+        console.log(goto1.greet());
+        console.log(goto2.greet());
+    </script>
+
+    <script>
+        function checkVote() {
+            let age = document.getElementById("ageInput").value;
+            let result = (age >= 18) ? "You are old enough to vote." : "You are not old enough to vote.";
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+</body>
+</html>
