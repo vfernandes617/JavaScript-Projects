@@ -6,7 +6,6 @@ document.write(typeof 3)
 document.write("10"+5);
 document.write(2E310);
 document.write(-3E310);
-document.getElementById("test").innerHTML=isNaN('This is a string');
 //Boolean logic for true or false//
 document.write(10>2);
 //the output for false looks like this//
