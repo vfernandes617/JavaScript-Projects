@@ -1,0 +1,35 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Image styling */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Paragraph styling */
+p {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* Specific styling for paragraph with id "p1" */
+#p1 {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Heading styling */
+h1 {
+  font-size: 24px;
+  color: #444;
+  margin-top: 30px;
+}
