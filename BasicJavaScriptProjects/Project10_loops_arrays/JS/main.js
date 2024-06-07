@@ -67,3 +67,10 @@ for (let i=0;i<10;i++) {
     }
     document.write("i");
 }
+//for loop function//
+const cars=["BMW","Volvo","Honda","Chevy"];
+let i, len, text;
+for (i=0, len=cars.length,text="";i<len;i++){
+    text+=cars[i]+"<br>";
+}
+document.getElementById("For_loop").innerHTML=text;
