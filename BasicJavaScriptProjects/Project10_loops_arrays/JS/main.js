@@ -5,11 +5,11 @@ function count_To_Ten() {
         Digit+="<br>" +X;
         X++;
     }
-document.getElementById("Counting_To_Ten").innerHTML=Digit;
+document.getElementById("Counting_to_Ten").innerHTML=Digit;
 }
 
 //loop function//
- var Intruments=["Guitar","Drums","Piano","Bass","Violin","Trumpet","Flute"]
+ var Instruments=["Guitar","Drums","Piano","Bass","Violin","Trumpet","Flute"]
  var Content="";
  function for_Loop() {
     for (Y=0; Y<Instruments.length;Y++){
@@ -23,8 +23,8 @@ document.getElementById("Counting_To_Ten").innerHTML=Digit;
     Fast_Food_Menu[0]="Cheeseburger";
     Fast_Food_Menu[1]="Milk Shake";
     Fast_Food_Menu[2]="Caprese Melt";
-    Fast_Food_Menu[4]="Array";
-    document.getElementById("Array").innerHTML= "Your order is" +
+    Fast_Food_Menu[3]="French Fries";
+    document.getElementById("French Fries").innerHTML= "Your order is" +
         Fast_Food_Menu[3]+".";
  }
 //const Keyword assignment//
@@ -68,9 +68,11 @@ for (let i=0;i<10;i++) {
     document.write("i");
 }
 //for loop function//
+function for_loop() {
 const cars=["BMW","Volvo","Honda","Chevy"];
 let i, len, text;
 for (i=0, len=cars.length,text="";i<len;i++){
     text+=cars[i]+"<br>";
 }
 document.getElementById("For_loop").innerHTML=text;
+}
