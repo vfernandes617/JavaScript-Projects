@@ -69,10 +69,12 @@ for (let i=0;i<10;i++) {
 }
 //for loop function//
 function for_loop() {
-const cars=["BMW","Volvo","Honda","Chevy"];
-let i, len, text;
-for (i=0, len=cars.length,text="";i<len;i++){
-    text+=cars[i]+"<br>";
+    const cars = ["BMW", "Volvo", "Honda", "Chevy"];
+    let i, len, text;
+    for (i = 0, len = cars.length, text = ""; i < len; i++) {
+        text += cars[i] + "<br>";
+    }
+    document.getElementById("For_loop").innerHTML = text;
 }
-document.getElementById("For_loop").innerHTML=text;
-}
+
+document.getElementById("myButton").addEventListener("click", for_loop);
