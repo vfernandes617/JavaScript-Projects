@@ -140,7 +140,7 @@ function checkWinConditions() {
 
 
     //This function utilizes HTML canvas to draw win lines.
-    function drawWinLine(coordX1,coordX2,coordY1,coordY2){
+    function drawWinLine(coordX1,coordY1,coordX2,coordY2){
         //This line accesses our HTML canvas element.
         const canvas=document.getElementById('win-lines');
         //This line gives us access to methods and properties to use on canvas.
@@ -177,7 +177,7 @@ function checkWinConditions() {
             //This method draws everything we laid our above.
             c.stroke();
             //This condition checks if we've reached the endpoint.
-            if (x1<=x2&&y1<=y2){
+            if(x1<=x2&&y1<=y2){
                 //This condition adds 10 to the previous end x endpoint
                 if(x<x2){x+=10;}
                 //This condition adds 10 to the previous end y endpoint.
@@ -185,6 +185,13 @@ function checkWinConditions() {
                 //This condition is similar to the one above.
                 //This is necessary for the 6,4,2 winn conditions.
                 if (x>=x2&&y>=y2){cancelAnimationFrame(animationLoop);}
+            }
+            //This condition is similar to the one above.
+            //This is necessary for the 6,4,2 win condtion.
+            if(x1<=x2&&y1>=y2){
+                if(x<x2){x+=10;}
+                if(y>y2){y-=10;}
+                if(x>=x2&&y<=y2){cancelAnimationFrame(animationLoop);}
             }
         }
 
