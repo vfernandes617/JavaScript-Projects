@@ -101,7 +101,7 @@ function Handle_operator(Next_Operator){
             return;
         }
         if (target.classList.contains('operator')){
-            handle_operator(target.value);
+            Handle_operator(target.value);
             Update_Display();
             return;
         }
