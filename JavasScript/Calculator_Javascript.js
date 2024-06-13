@@ -92,7 +92,7 @@ function Handle_operator(Next_Operator){
     Update_Display();
     //This section monitors button clicks
     const keys=document.querySelector('.calculator-keys');
-    keys.addEventListener('click',(event)) => {
+    keys.addEventListener('click',(event) => {
         //The target variable is na object that represents the elemtn
         //that waas clicked
         const {target}=event;
@@ -118,4 +118,4 @@ function Handle_operator(Next_Operator){
         }
         Input_Digit(target.value);
         Update_Display();
-    }
+    })
