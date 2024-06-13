@@ -1,15 +1,15 @@
 html{
-    font:size 70%;
+    font-size: 70%;
     box-sizing:border-box;
 }
 
-*,*:before,*::after{
+*,*::before,*::after{
     margin:0;
     padding:0;
     box-sizing:inherit;
 }
 
-.calulator{
+.calculator{
     border:1.2px solid darkslategray;
     border-radius:7px;
     position:absolute;
@@ -67,7 +67,7 @@ button:hover {
 .equal-sign{
     background-color:blue;
     border-color:darkslateblue;
-    color:#FFFFff;
+    color:#FFFF;
     height:100%;
     grid-area:2/4/6/5;
 }
